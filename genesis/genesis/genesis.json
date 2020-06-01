@@ -1,0 +1,122 @@
+{
+  "app_hash": "",
+  "app_state": {
+    "organization":"genesis",
+    "token": {
+      "address": "",
+      "owner": "bcb8yNeqAixZ7DDQx1fHSvQdA3kKDQ48gci7",
+      "name": "BCB",
+      "symbol": "BCB",
+      "totalSupply": 5000000000000000000,
+      "addSupplyEnabled": false,
+      "burnEnabled": false,
+      "gasPrice": 2500
+    },
+    "rewardStrategy": [
+      {
+        "name": "validators",
+        "rewardPercent": "20.00",
+        "address": ""
+      },
+      {
+        "name": "r_d_team",
+        "rewardPercent": "30.00",
+        "address": "bcbKu6bXkN7bf1wQ8jxwqeuiMoUYVuSVEhdW"
+      },
+      {
+        "name": "bonus_bcb",
+        "rewardPercent": "20.00",
+        "address": "bcbQ2LKPgUJq8e94TAn3r8B8d6Zz1DNjHhyx"
+      },
+      {
+        "name": "bonus_token",
+        "rewardPercent": "30.00",
+        "address": "bcb7KxxZMwStYGGnKi3xNNm9mnm7pdWtF9gD"
+      }
+    ],
+    "contracts": [
+      {
+        "name": "system",
+        "version": "",
+        "code": "file name",
+        "codeHash": "E4334A333...",
+        "codeDevSig": {},
+        "codeOrgSig": {}
+      },
+      {
+        "name": "system",
+        "version": "",
+        "code": "file name",
+        "codeHash": "E4334A333...",
+        "codeDevSig": {},
+        "codeOrgSig": {}
+      },
+      {
+        "name": "system",
+        "version": "",
+        "code": "file name",
+        "codeHash": "E4334A333...",
+        "codeDevSig": {},
+        "codeOrgSig": {}
+      },
+      {
+        "name": "system",
+        "version": "",
+        "code": "file name",
+        "codeHash": "E4334A333...",
+        "codeDevSig": {},
+        "codeOrgSig": {}
+      },
+      {
+        "name": "system",
+        "version": "",
+        "code": "file name",
+        "codeHash": "E4334A333...",
+        "codeDevSig": {},
+        "codeOrgSig": {}
+      },
+      {
+        "name": "system",
+        "version": "",
+        "code": "file name",
+        "codeHash": "E4334A333...",
+        "codeDevSig": {},
+        "codeOrgSig": {}
+      }
+    ]
+  },
+  "chain_id": "bcb",
+  "genesis_time": "2018-07-15T11:25:08.0515146+08:00",
+  "validators": [
+    {
+      "name": "earth",
+      "reward_addr": "bcb5xjCpYJrKkyM3kgo5Jk8Pge7XDTwuvSUm",
+      "power": 10
+    },
+    {
+      "name": "venus",
+      "reward_addr": "bcb5rzgE1tSJbJuegEj4vbAkotmwRkxwiSyV",
+      "power": 10
+    },
+    {
+      "name": "jupiter",
+      "reward_addr": "bcb3JivtUWiDG48dbWDvFBUHDL8veB7JvQvS",
+      "power": 10
+    },
+    {
+      "name": "mercury",
+      "reward_addr": "bcbKG7Y7hWLhjxiBNZ8UBgja4ocLcSHKW4b4",
+      "power": 10
+    },
+    {
+      "name": "mars",
+      "reward_addr": "bcbAb65XuCz8bWHB1ittqMQSRyLvDmb74KRB",
+      "power": 10
+    },
+    {
+      "name": "pluto",
+      "reward_addr": "bcbCfciTQNLQGwRWadxXg6ms8dBguP5sooX8",
+      "power": 10
+    }
+  ]
+}
