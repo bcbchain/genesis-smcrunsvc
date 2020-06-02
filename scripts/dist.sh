@@ -29,6 +29,7 @@ if [[ -f "pkg.sh" ]];then
   source pkg.sh
 fi
 
-echo "BUILD SUCCESS!"
+echo ""
+echo "======> BUILD SUCCESS!"
 
 exit 0

@@ -42,13 +42,13 @@ rm -rf "$DIST_DIR"
 mkdir -p "$DIST_DIR"
 
 genesisDir="./genesis/"
-smcRunSvr="genesis-smcrunsvc_"
+#smcRunSvr="genesis-smcrunsvc_"
 
 echo "==> Tar genesis files..."
 GetDirs
 
 mkdir -p temp
-for d in $TDIRS
+for d in "${TDIRS[@]}"
 do
   if [[ "$d" == "genesis" ]];then
     mkdir -p temp/genesis/src
@@ -58,14 +58,17 @@ do
   fi
 done
 
-tar -zcf "$DIST_DIR$smcRunSvr$VERSION".tar.gz temp/*
+cd temp
+tar -zcf "../$DIST_DIR$project_name""_$VERSION".tar.gz genesis
+cd ..
 rm -rf temp "$genesisDir""temp"
 
 # Make the checksums.
 pushd "$DIST_DIR" > /dev/null
-shasum -a256 ./* > "$smcRunSvr"_SHA256SUMS
+shasum -a256 ./* > "$project_name"_SHA256SUMS
 popd >/dev/null
 
+echo ""
 echo "==> Build results:"
 echo "==> Path: "../../$DIST_DIR""
 echo "==> Files: "
