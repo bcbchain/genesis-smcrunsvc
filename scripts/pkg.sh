@@ -48,11 +48,22 @@ echo "==> Tar genesis files..."
 GetDirs
 
 mkdir -p temp
+
+UNAME=`uname`
+
+DARWIN="Darwin"
+
 for d in "${TDIRS[@]}"
 do
   if [[ "$d" == "genesis" ]];then
     mkdir -p temp/genesis/src
     cp -r "$d"/* temp/genesis/src
+
+    if [[ $UNAME == $DARWIN ]];then
+      sed -i "" "10s/genesis-smcrunsvc\/genesis\/genesis/genesis/" temp/genesis/src/cmd/smcrunsvc/smcrunsvc.go
+    else
+       sed -i "10s/genesis-smcrunsvc\/genesis\/genesis/genesis/" temp/genesis/src/cmd/smcrunsvc/smcrunsvc.go
+    fi
   else
     cp -r "$d" temp/
   fi
