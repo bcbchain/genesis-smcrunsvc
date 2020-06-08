@@ -61,8 +61,16 @@ do
 
     if [[ $UNAME == $DARWIN ]];then
       sed -i "" "10s/genesis-smcrunsvc\/genesis\/genesis/genesis/" temp/genesis/src/cmd/smcrunsvc/smcrunsvc.go
+      sed -i "" "6s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_interface.go
+      sed -i "" "7s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_interface.go
+      sed -i "" "4s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_method.go
+      sed -i "" "5s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_method.go
     else
        sed -i "10s/genesis-smcrunsvc\/genesis\/genesis/genesis/" temp/genesis/src/cmd/smcrunsvc/smcrunsvc.go
+       sed -i "6s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_interface.go
+       sed -i "7s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_interface.go
+       sed -i "4s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_method.go
+       sed -i "5s/genesis-smcrunsvc\/genesis\/stubcommon/stubcommon/" temp/genesis/src/genesis/stub_method.go
     fi
   else
     cp -r "$d" temp/
